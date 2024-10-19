@@ -1,6 +1,8 @@
 import random
 import math
 
+seed = 1
+random.seed(seed)
 K = 5       # the number of the vehicles
 N = 4       # the number of customers
 Q = 50      # the capacity of the vehicles
@@ -21,4 +23,4 @@ for n in range(N + 2):
 for n in range(N):
     q_n[n] = random.randint(10,15)
 
-M = 99999999
+M = 99999
